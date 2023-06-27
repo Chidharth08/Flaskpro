@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fahrenheit to Celsius</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Fahrenheit to Celsius</h1>
+    <hr/>
+    <div class="slidecontainer">
+        <h2 id="fahrenheit"></h2>
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange">
+        <h2 id="celsius"></h2>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
